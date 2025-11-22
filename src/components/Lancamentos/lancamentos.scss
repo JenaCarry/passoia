@@ -1,0 +1,60 @@
+.lancamentos {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+
+    .lancamentos__title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 1.5rem 0;
+        color: rgba(45, 45, 45, 1);
+    }
+
+    .lancamentos__left {
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+
+        .lancamentos__left-image {
+            width: 8.125rem;
+            height: 8.125rem;
+        }
+    }
+
+    .lancamentos__right {
+        .lancamentos__cores {
+            display: flex;
+            gap: 1rem;
+
+            .lancamentos__circle {
+                width: 3.75rem;
+                height: 3.75rem;
+                border-radius: 50%;
+                border: none;
+                cursor: pointer;
+                transition: all 0.2s;
+
+                &:hover {
+                    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
+                }
+            }
+
+            .azul {
+                background-color: rgba(177, 176, 216, 1);
+            }
+
+            .vermelho {
+                background-color: rgba(225, 52, 42, 1);
+            }
+
+            .marrom {
+                background-color: rgba(115, 40, 45, 1);
+            }
+
+            .base {
+                background-color: rgba(222, 117, 94, 1);
+            }
+        }
+    }
+}

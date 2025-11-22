@@ -1,10 +1,18 @@
-import { Header } from "./assets/components/Header";
+import { Header } from "./components/Header";
+import { Lancamentos } from "./components/Lancamentos";
+import "./app.scss";
+import { Banner } from "./components/Banner";
+import { Looks } from "./components/Looks";
 
 function App() {
     return (
         <>
-            <h1>Passoia</h1>
             <Header />
+            <main>
+                <Banner />
+                <Looks />
+                <Lancamentos />
+            </main>
         </>
     );
 }
