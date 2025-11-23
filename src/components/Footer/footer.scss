@@ -1,0 +1,61 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    color: rgba(45, 45, 45, 1);
+    padding: 3rem 1.125rem;
+    box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.25);
+    margin-top: 3rem;
+
+    a {
+        text-decoration: none;
+        color: rgb(45, 45, 45);
+        transition: color 0.2s;
+
+        &:hover {
+            color: #d69fb8;
+        }
+    }
+
+    .footer__card {
+        width: 100%;
+        max-width: 18rem;
+    }
+
+    .title-footer {
+        font-size: 1.125rem;
+        font-weight: 700;
+        margin-bottom: 0.875rem;
+    }
+
+    .footer__list-column {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footer__list-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .footer__pagamento {
+        .footer__list-row {
+            margin-top: -20px;
+        }
+    }
+
+    .footer__sociais {
+        a {
+            transition: transform 0.2s;
+
+            &:hover {
+                transform: scale(1.05);
+                filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.4));
+            }
+        }
+    }
+}

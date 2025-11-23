@@ -14,7 +14,7 @@ export function Lancamentos() {
 
     return (
         <section id="lancamentos" className="lancamentos">
-            <h2 className="lancamentos__title">APROVEITE OS LANÇAMENTOS</h2>
+            <h2 className="title">APROVEITE OS LANÇAMENTOS</h2>
 
             <div className="lancamentos__left">
                 <img
@@ -43,7 +43,7 @@ export function Lancamentos() {
             </div>
 
             <div className="lancamentos__right">
-                <div>
+                <div className="lancamentos__header">
                     <img src={fiveStars} alt="Five Stars" />
                     <h3 className="lancamentos__subtitle">Matte Premium</h3>
                 </div>
@@ -68,6 +68,20 @@ export function Lancamentos() {
                             className="lancamentos__circle base"
                         ></button>
                     </div>
+                </div>
+
+                <div className="lancamentos__description">
+                    <h4 className="lancamentos__description-title">
+                        Descrição
+                    </h4>
+                    <p className="lancamentos__description-text">
+                        O Batom Matte possui uma fórmula inovadora desenvolvida
+                        para entregar o máximo de cor na primeira aplicação com
+                        um deslize suave e macio. Tem acabamento matte aveludado
+                        e manteiga de manga que ajuda a hidratar e a proteger os
+                        lábios contra ressecamento. Ajuda na hidratação dos
+                        lábios, textura fina e macia que não pesa nos lábios.
+                    </p>
                 </div>
             </div>
         </section>

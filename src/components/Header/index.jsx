@@ -23,7 +23,7 @@ export function Header() {
                     </a>
                 </li>
                 <li className="header__item">
-                    <a className="header__link" href="#">
+                    <a className="header__link" href="#novidades">
                         NOVIDADES
                     </a>
                 </li>

@@ -1,30 +1,25 @@
 .looks {
-    padding: 1.125rem;
-
-    .looks__title {
-        font-size: 1.25rem;
-        font-weight: 700;
-        text-align: center;
-        margin: 1.5rem 0;
-        color: rgba(45, 45, 45, 1);
-    }
+    padding: 0 1.125rem;
 
     .looks__cards {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 20rem));
         gap: 1rem;
+        align-items: center;
         justify-content: center;
 
         .looks__card {
             overflow: hidden;
+            height: 100%;
+            max-height: 31.25rem;
         }
 
         .looks__image {
             width: 100%;
-            transition: all 0.3s;
+            transition: transform 0.3s;
 
             &:hover {
-                transform: scale(1.02);
+                transform: scale(1.05);
             }
         }
     }
@@ -32,11 +27,6 @@
 
 @media (min-width: 48rem) {
     .looks {
-        .looks__title {
-            font-size: 1.875rem;
-            margin: 1.875rem 0;
-        }
-
         .looks__cards {
             grid-template-columns: repeat(4, minmax(0, 20rem));
         }
@@ -45,11 +35,6 @@
 
 @media (min-width: 80rem) {
     .looks {
-        .looks__title {
-            font-size: 2.5rem;
-            margin: 2rem 0;
-        }
-
         .looks__cards {
             gap: 1.5rem;
         }

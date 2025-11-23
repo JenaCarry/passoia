@@ -7,7 +7,7 @@ import tendencia from "../../assets/tendencia.png";
 export function Looks() {
     return (
         <section id="looks" className="looks">
-            <h2 className="looks__title">LOOKS E DICAS DE MAQUIAGEM</h2>
+            <h2 className="title">LOOKS E DICAS DE MAQUIAGEM</h2>
 
             <div className="looks__cards">
                 <div className="looks__card">

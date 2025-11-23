@@ -1,20 +1,15 @@
 .lancamentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     max-width: 80rem;
+    padding: 0 1.125rem;
     margin: 0 auto;
-
-    .lancamentos__title {
-        font-size: 1.25rem;
-        font-weight: 700;
-        text-align: center;
-        margin: 1.5rem 0;
-        color: rgba(45, 45, 45, 1);
-    }
+    color: rgba(45, 45, 45, 1);
 
     .lancamentos__left {
-        display: flex;
-        flex-direction: column;
-        gap: 0.625rem;
+        display: none;
 
         .lancamentos__left-image {
             width: 8.125rem;
@@ -22,38 +17,132 @@
         }
     }
 
+    .lancamentos__center {
+        margin-bottom: 1.5rem;
+
+        .lancamentos__center-image {
+            width: 9.75rem;
+            height: 9.75rem;
+        }
+    }
+
     .lancamentos__right {
-        .lancamentos__cores {
-            display: flex;
-            gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 30rem;
+        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+        padding: 0 1rem;
 
-            .lancamentos__circle {
-                width: 3.75rem;
-                height: 3.75rem;
-                border-radius: 50%;
-                border: none;
-                cursor: pointer;
-                transition: all 0.2s;
+        .lancamentos__header {
+            text-align: center;
 
-                &:hover {
-                    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
+            .lancamentos__subtitle {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+
+        .lancamentos__opcoes {
+            margin: 1rem 0;
+
+            span {
+                display: block;
+                text-align: center;
+                font-size: 0.625rem;
+            }
+
+            .lancamentos__cores {
+                display: flex;
+                gap: 1rem;
+                margin-top: 0.625rem;
+
+                .lancamentos__circle {
+                    // width: 3.75rem;
+                    // height: 3.75rem;
+                    width: 2.25rem;
+                    height: 2.25rem;
+                    border-radius: 50%;
+                    border: none;
+                    cursor: pointer;
+                    transition: all 0.2s;
+
+                    &:hover {
+                        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
+                    }
+                }
+
+                .azul {
+                    background-color: rgba(177, 176, 216, 1);
+                }
+
+                .vermelho {
+                    background-color: rgba(225, 52, 42, 1);
+                }
+
+                .marrom {
+                    background-color: rgba(115, 40, 45, 1);
+                }
+
+                .base {
+                    background-color: rgba(222, 117, 94, 1);
+                }
+            }
+        }
+
+        .lancamentos__description {
+            .lancamentos__description-title {
+                font-size: 0.875rem;
+                font-weight: 500;
+                text-align: center;
+                margin-bottom: 0.625rem;
+            }
+
+            .lancamentos__description-text {
+                font-size: 0.75rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 48rem) {
+    .lancamentos {
+        .lancamentos__center {
+            .lancamentos__center-image {
+                width: 13rem;
+                height: 13rem;
+            }
+        }
+
+        .lancamentos__right {
+            padding: 0 1.5rem;
+            .lancamentos__header {
+                .lancamentos__subtitle {
+                    font-size: 1.5rem;
                 }
             }
 
-            .azul {
-                background-color: rgba(177, 176, 216, 1);
+            .lancamentos__opcoes {
+                .lancamentos__cores {
+                    .lancamentos__circle {
+                        // width: 3.75rem;
+                        // height: 3.75rem;
+                        width: 2.75rem;
+                        height: 2.75rem;
+                    }
+                }
             }
 
-            .vermelho {
-                background-color: rgba(225, 52, 42, 1);
-            }
+            .lancamentos__description {
+                .lancamentos__description-title {
+                    font-size: 1.25rem;
+                }
 
-            .marrom {
-                background-color: rgba(115, 40, 45, 1);
-            }
-
-            .base {
-                background-color: rgba(222, 117, 94, 1);
+                .lancamentos__description-text {
+                    font-size: 0.875rem;
+                }
             }
         }
     }
