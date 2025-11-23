@@ -1,12 +1,14 @@
 .lancamentos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 80rem;
-    padding: 0 1.125rem;
-    margin: 0 auto;
-    color: rgba(45, 45, 45, 1);
+    .lancamentos__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 80rem;
+        padding: 0 1.125rem;
+        margin: 0 auto;
+        color: rgba(45, 45, 45, 1);
+    }
 
     .lancamentos__left {
         display: none;
@@ -127,8 +129,6 @@
             .lancamentos__opcoes {
                 .lancamentos__cores {
                     .lancamentos__circle {
-                        // width: 3.75rem;
-                        // height: 3.75rem;
                         width: 2.75rem;
                         height: 2.75rem;
                     }
@@ -142,6 +142,71 @@
 
                 .lancamentos__description-text {
                     font-size: 0.875rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 64rem) {
+    .lancamentos {
+        .lancamentos__container {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .lancamentos__left {
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem;
+        }
+
+        .lancamentos__center {
+            margin: 0 1rem 0 0;
+            .lancamentos__center-image {
+                width: 100%;
+                max-width: 25.625rem;
+                height: 25.625rem;
+            }
+        }
+
+        .lancamentos__right {
+            align-items: flex-start;
+            gap: 1rem;
+            height: 25.625rem;
+            padding: 1.5rem;
+
+            .lancamentos__header {
+                text-align: start;
+                .lancamentos__subtitle {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .lancamentos__opcoes {
+                margin: 0;
+                span {
+                    text-align: start;
+                }
+
+                .lancamentos__cores {
+                    .lancamentos__circle {
+                        width: 3.75rem;
+                        height: 3.75rem;
+                    }
+                }
+            }
+
+            .lancamentos__description {
+                .lancamentos__description-title {
+                    font-size: 1.25rem;
+                    text-align: start;
+                }
+
+                .lancamentos__description-text {
+                    font-size: 1rem;
                 }
             }
         }
