@@ -1,6 +1,7 @@
 import "./header.scss";
 import logo from "../../assets/logo.png";
-import icon from "../../assets/icon-hamburger.png";
+import iconHamburger from "../../assets/icon-hamburger.png";
+import iconClose from "../../assets/icon-close.png";
 import { useEffect, useRef, useState } from "react";
 
 export function Header() {
@@ -38,7 +39,11 @@ export function Header() {
             </a>
 
             <button onClick={handleOpen} className="header__icon" ref={iconRef}>
-                <img src={icon} alt="Icon Hamburger" />
+                {isOpen ? (
+                    <img src={iconClose} alt="Icon Hamburger" />
+                ) : (
+                    <img src={iconHamburger} alt="Icon Hamburger" />
+                )}
             </button>
 
             <nav
